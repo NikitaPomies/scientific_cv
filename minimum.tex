@@ -1,0 +1,103 @@
+\documentclass[a4paper,
+		varspacetitle=-2mm, % Top margin above main title
+		varspacesection=2.5mm, % top margin above every section title
+		vartopmargin=0.8cm,  % Paper top margin
+		varbottommargin=0.5cm % Paper bottom margin
+	]{cv}
+\usepackage{enumitem}
+\usepackage{ifthen}
+
+% Pour modifier la couleur des urls, il faut modifier l'option "urlcolor"
+
+\usepackage[colorlinks = true,
+            linkcolor = purple,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\renewcommand\labelitemi{\tiny $\bullet$}
+
+\begin{document}
+
+
+    \begin{minipage}{.5\linewidth}
+      \begin{flushleft}
+	\nameleft{ Prénom Nom }
+	
+    31 rue Nom de Rue 
+    
+    75000 Paris
+    
+	mail@mail.fr
+	
+	06.12.12.12.12
+	
+       
+      \end{flushleft}
+    \end{minipage}
+    \begin{minipage}{.45\linewidth}
+      \begin{flushright}
+	\includegraphics[height=3.5cm]{photo_cv}
+      \end{flushright}
+    \end{minipage}
+
+\maintitle{Élève-ingénieur à l'École ... }
+\subtitle{Sous-titre ici}
+
+
+\section{Professionnal Experience}
+\vspace{2mm}
+  
+\cventryprofessionnal{Jun. 2021 -- Now}{Air Liquide}{Chauffeur routier}{Paris, France}{test}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=0.21\textwidth]
+%\setlength{\itemindent}[leftmargin=0.15\textwidth]
+\item  Mrs Mellor was chauffeur driven to the Rock and taken back by car after having lunch.
+\item Then on Monday the chauffeur drove them straight to the theatre for the show.
+\item  Eva Hendrix started to chatter in her persuasive voice while the uniformed chauffeur drove them into the ancient town of Freiburg.
+\item I'll learn to drive and be some film star's chauffeur. The chauffeur turned the sedan about.
+\end{itemize}
+
+
+
+\vspace{2mm}
+
+
+\section{Academic Background}
+\vspace{2mm}
+\cventryacademic{2020 - 2023}{École Nationale Supérieure de la Céramique }{Parisian Master of Céramique (MPRO)}{Paris, France}{}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=0.21\textwidth]
+%\setlength{\itemindent}[leftmargin=0.15\textwidth]
+\item Mathématiques appliquées : Processus Stochastiques, Statistiques, Analyse fonctionnelle, Optimisation et Recherche Opérationnelle, Machine Learning
+\item Informatique : Structure de données, Programmation orientée objet en  et Python
+\item Economie : Macro, Micro, Marchés financiers
+\end{itemize}
+\vspace{2mm}
+
+\cventryacademicnodes{2018 - 2020}{Lycée Faidherbe}{}{Lille, France}{}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=0.21\textwidth]
+%\setlength{\itemindent}[leftmargin=0.15\textwidth]
+\item Enrolled in an intensive preparatory school for competitive entrance to top engineering schools
+\item The rag trade is extremely competitive, and one needs plenty of contacts in order to survive.
+\end{itemize}
+\vspace{2mm}
+
+\section{Academic Projects}\cventryprofessionnal{Blablabla}{Uncapacitated plant and distribution center location problem}{}{}{}
+\begin{itemize}[noitemsep,topsep=0pt,leftmargin=0.21\textwidth]
+\item Modern pharmacy has solved the problem of sleeplessness.
+\item To feel that one has a place in life solves half the problem of content.
+\item The repository containing the subject, the model I used and the source code can be found on this {\href{https://github.com/NikitaPomies/FPL_AIRLIQUIDE}{{\underline{github repo}}}}. (Click on "github repo")
+\end{itemize}
+
+\section{Languages and Skills }
+\vspace{2mm}
+\textbf{Languages} : French (native), English (fluent, TOEIC 970/990), Russian (Intermediate)\newline
+\vspace{-2mm}\newline
+\textbf{IT skills} : Proficient in Python, Julia, Linux, \LaTeX, Git. Familiar with \CC and the Gurobi Solver.\newline
+\vspace{-2mm}\newline
+\textbf{Sports} :  Soccer (10 years), Grappling (begginer)
+
+
+
+
+\end{document} 
+
