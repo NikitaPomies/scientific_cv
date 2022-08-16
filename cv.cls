@@ -97,8 +97,21 @@
 \setbox0=\hbox{hi}
 %\stringwidth=\wd0
 
-  \begin{tabular*}{\textwidth}{p{0.17\textwidth} p{0.6\textwidth}@{\extracolsep{\fill}}r}%
+  \begin{tabular*}{\textwidth}{@{}p{0.17\textwidth} p{0.6\textwidth}@{\extracolsep{\fill}}r}%
 	 {\bfseries#1} &  {\bfseries #2} {\text{--}} {\bfseries #3} & {\bfseries #4} \\%
+	 
+	  %\vspace{-3cm}
+  \end{tabular*}
+  \vspace{-3mm}
+}
+ 
+\newcommand*{\cventryproject}[5]
+{
+\setbox0=\hbox{hi}
+%\stringwidth=\wd0
+
+  \begin{tabular*}{\textwidth}{@{}p{0.17\textwidth} p{0.7\textwidth}@{\extracolsep{\fill}}r}%
+	 {\bfseries#1} &  {\bfseries #2} &{\bfseries #3}  \\%
 	 
 	  %\vspace{-3cm}
   \end{tabular*}
@@ -109,7 +122,7 @@
 \setbox0=\hbox{hi}
 %\stringwidth=\wd0
 
-  \begin{tabular*}{\textwidth}{p{0.17\textwidth} p{0.6\textwidth}@{\extracolsep{\fill}}r}%
+  \begin{tabular*}{\textwidth}{@{}p{0.17\textwidth} p{0.65\textwidth}@{\extracolsep{\fill}}r}%
 	 {\bfseries#1} &  {\bfseries #2}  & {\bfseries #4} \\%
 	 {} & {\text #3} & {}\\
 	 
@@ -123,7 +136,7 @@
 \setbox0=\hbox{hi}
 %\stringwidth=\wd0
 
-  \begin{tabular*}{\textwidth}{p{0.17\textwidth} p{0.6\textwidth}@{\extracolsep{\fill}}r}%
+  \begin{tabular*}{\textwidth}{@{}p{0.17\textwidth} p{0.6\textwidth}@{\extracolsep{\fill}}r}%
 	 {\bfseries#1} &  {\bfseries #2}  & {\bfseries #4} \\%
 	 	  %\vspace{-3cm}
   \end{tabular*}
@@ -143,14 +156,6 @@
 }
 
 
- \newcommand*
- % \newcommand{\datedsubsectionlong}[4]{%
-%   \begin{tabular}{p{3cm} l}
-%    \textit{#1} & \textrm{#2} \\
-%     & \textrm{#3} \\
-%     & \textrm{#4} \\
-%   \end{tabular}
-% }
 
 \newcommand{\namecenter}[1]{
   \centerline{\LARGE{#1}}
