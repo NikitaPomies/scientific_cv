@@ -1,0 +1,116 @@
+\documentclass[a4paper,
+		varspacetitle=-2mm, % Top margin above main title
+		varspacesection=2.5mm, % top margin above every section title
+		vartopmargin=1.3cm,  % Paper top margin
+		varbottommargin=0.5cm % Paper bottom margin
+	]{cv}
+\usepackage{enumitem}
+\usepackage{ifthen}
+
+% Pour modifier la couleur des urls, il faut modifier l'option "urlcolor"
+
+\usepackage[colorlinks = true,
+            linkcolor = purple,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+            
+\usepackage{fontawesome}
+\usepackage{eqlist}
+\usepackage{calc}
+
+\renewcommand\labelitemi{\tiny $\bullet$}
+\newcommand{\comment}[1]{}
+
+\begin{document}
+
+\maintitle{Ikhlass Yaya-Oyé}
+\vspace{-2mm}
+\begin{center}
+    + 33 6 06 06 06 06 -- 74014 Paris, France
+    
+    ikhlass.yaya-oye@polytechnique.edu -- \faGithub \,: \href{https://github.com/ikhlo}{ikhlo} -- \faLinkedinSquare  \,: \href{https://www.linkedin.com/in/ikhlassyo/}{Ikhlass Yaya-Oyé}
+\end{center}
+\vspace{0.2mm}
+%\subtitle{Sous-titre ici}
+
+%==================================================
+
+
+\section{Professionnal Experience}
+\vspace{2mm}
+ 
+\cventryprofessionnal{Oct. 2022 -- Now}{Air Liquide}{Applied Data Scientist}{Jouy-en-Josas, France}{Permanent job}
+\vspace{3mm}
+
+\cventryprofessionnalbis{Apr. -- Sept. 2022}{Air Liquide}{Data Scientist}{Jouy-en-Josas, France}{End of studies internship}
+{Optimisation of the management of air gases production using reinforcement learning
+}
+{Modelisation of the RL environment in Python {\large $\cdot$} Development of agents models and tools to monitor training and evaluate agents {\large $\cdot$} Train agents and compare results with original approach
+}
+{Mathematics, Pandas, NumPy, Coax (Jax \& Haiku), GitLab, CI/CD, OOP
+}
+\vspace{5mm}
+
+\cventryprofessionnalbis{Apr. -- Sept. 2021}{Institut Pasteur}{Deep Learning Engineer}{Paris, France}{Internship}
+{Development of an AI solution to do advanced cells phenotype definition by classifying each cellular component
+}
+{Cleaning and pre-processing of data {\large $\cdot$} Use of pretrained models and definition of the top layers {\large $\cdot$} Tune hyperparameters and compare trained models with statistical approach {\large $\cdot$} Development of GUIs allowing the use of the solution by biologists
+}
+{Computer Vision, Jython (GUI), Python, Keras
+}
+
+
+%==================================================
+
+
+\section{Academic Background}
+\vspace{2mm}
+\cventryacademic{École Polytechnique - l'X $|$ Institut Polytechnique}{Palaiseau, France}{MSc in applied mathematics, data science}{2021 - 2022}
+\vspace{3mm}
+
+\cventryacademic{École Supérieure d'Ingénieurs pôle Léonard de Vinci}{La Défense, France}{Double degree engineer manager, specialized in computer science}{2017 - 2022}
+
+
+%==================================================
+
+
+\section{Projects}
+\vspace{2mm}
+\cvprojects{Elaboration of a new database solution}{Freelance}{
+Customer wanted a new way to store user platform logs. I had to identify their needs to propose the best solution. Then I conceived a database system based on an Elasticsearch cluster and defined a pipeline to upload data. Finally, I ensured the stability and the scalability of the new system by testing business requests.}{confidential} \vspace{5mm}
+
+\cvprojects{TikTok App Analytics}{Personal Project}{
+Due to its recent success, a lot of data are available on TikTok social media. I developed a Streamlit interactive dashboard to visualize different trends, and videos and users' related to them. To do so I used a TikTok API with Python to request and gather data. Then I processed data, saved it into a dataframe structure that is used to made visualizations.}{\href{https://github.com/ikhlo/TiktokAppAnalytics}{see project}} \vspace{5mm}
+
+\cvprojects{Footballer price prediction}{Personal Project}{
+Interested in sport field, a friend and I decided to develop a model to predict the price of a soccer player according to its physical abilities. This project has been done using Python : we used Selenium library to scrap data from internet, did so data cleaning and features engineering, then built several ML and DL models using respectively Scikit-Learn and Keras. Finally, we developed a Flask app and used Heroku to deploy our model through a website.}{\href{https://github.com/ikhlo/Price_prediction_footballers}{see project}}
+
+
+%==================================================
+
+
+\section{Skills and Interests }
+\vspace{2mm}
+\textbf{Hard skills} : Python, Julia, JavaScript (Programming) -- Scikit-Learn, Keras, Pytorch (ML/DL) -- SQL, ElasticSearch, MongoDB (Database) -- GCP, Hadoop, Spark (Big Data) \vspace{2mm}
+
+\textbf{Soft skills} : Critical spirit -- Intellectual Curiosity -- Teamwork -- Problem solving -- MBTI certified \vspace{2mm} 
+
+\textbf{Languages} : French (native), English (fluent, TOEFL 577/680) \vspace{2mm} 
+
+\textbf{Sports} :  Tennis (7 years), Volleyball, Grappling (begginer) \vspace{2mm} 
+
+
+\end{document} 
+
+
+\comment{
+\cventryprofessionnal{Apr. -- Sept. 2022}{Air Liquide}{Data Scientist Intern}{Jouy-en-Josas, France}{End of studies internship}
+\begin{description}[noitemsep, topsep=0pt, leftmargin=0.085\textwidth, ,labelwidth=\widthof{Tasks }, labelsep=0cm, font=\normalfont\underline]
+%\setlength{\itemindent}[leftmargin=0.15\textwidth]
+\item[Goal]: Optimisation of the management of air gases production using reinforcement learning
+\item[Tasks]: Modelisation of the RL environment in Python {\large $\cdot$} Development of agents models and tools to monitor training and evaluate agents {\large $\cdot$} Train agents and compare results with original approach
+\item[Skills]: Mathematics, Pandas, NumPy, Coax (Jax \& Haiku), GitLab, CI/CD, OOP
+\end{description}
+}
+
